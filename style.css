@@ -9,6 +9,7 @@ body {
   width: 100vw;
   height: auto;
 }
+
 #head {
   width: 100vw;
   text-align: center;
@@ -198,4 +199,60 @@ footer {
 i {
   padding-top: 15px;
   font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  #head {
+    flex-direction: column;
+    text-align: start;
+    height: 450px;
+  }
+  #head h1 {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  #head p {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: start;
+  }
+  #head a {
+    padding: 10px;
+    font-size: 13;
+    display: inline;
+    margin-left: 20px;
+  }
+  .product-items .card {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #head {
+    flex-direction: column;
+    text-align: start;
+    height: 400px;
+  }
+  #head h1 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  #head p {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: start;
+    color: #ffc;
+  }
+  .nav ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+  }
+  .nav ul li {
+    padding: 0px;
+    margin: 12px;
+  }
+  .nav ul li a {
+    font-size: 13px;
+  }
 }
